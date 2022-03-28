@@ -1,0 +1,32 @@
+iris:
+  DisablePathCorrection: false
+  EnablePathEscape: false
+  FireMethodNotAllowed: true
+  DisableBodyConsumptionOnUnmarshal: true
+  TimeFormat: 2006-01-02 15:04:05
+  Charset: UTF-8
+app:
+  timezone: Asia/Shanghai
+  debug: true
+  bindAddress: 127.0.0.1
+  port: 9537
+mysql:
+  host: db-host
+  port: 3306
+  database: db-name
+  user: db-user
+  password: db-password
+  charset: utf8
+  sqlLog: true
+  maxIdleConns: 10 #Maximum number of connections when idle
+  maxOpenConns: 100 #Maximum connections
+  maxConnLifeTime: 60
+redis:
+  host: 127.0.0.1:6379
+  password:
+  maxidle: 10 #number of idle connections
+  maxactive: 0 #maximum number of connection pools 0-no restriction
+  idletimeout: 0
+  wait: false
+  maxconnlifetime: 0
+  debug: true

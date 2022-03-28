@@ -1,0 +1,60 @@
+definitions:
+  request.CreateDemoRequest:
+    properties:
+      name:
+        type: string
+    required:
+    - name
+    type: object
+info:
+  contact: {}
+  description: Iris Demo
+  license: {}
+  title: Iris Demo
+  version: 1.0.0
+paths:
+  /jh/demo/create:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: data
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/request.CreateDemoRequest'
+      produces:
+      - application/json
+      responses:
+        "200": {}
+      summary: create demo
+      tags:
+      - Demo
+  /jh/demo/list:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: keywords
+        in: query
+        name: keywords
+        type: string
+      - description: page
+        in: query
+        name: page
+        required: true
+        type: integer
+      - description: page_size
+        in: query
+        name: page_size
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200": {}
+      summary: get demo list
+      tags:
+      - Demo
+swagger: "2.0"

@@ -1,0 +1,19 @@
+{
+  "versions": [
+    {
+      "version": "1.0.2",
+      "date": "2022-03-10",
+      "description": "main_test.go file, Add buffered chan and non-buffered chan to set and get map."
+    },
+    {
+      "version": "1.0.1",
+      "date": "2021-09-02",
+      "description": "Optimize: add common function to get current month's the last day"
+    },
+    {
+      "version": "1.0.0",
+      "date": "2021-09-02",
+      "description": "iris demo init coding"
+    }
+  ]
+}
