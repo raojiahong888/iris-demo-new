@@ -115,6 +115,7 @@ func HandleOrder(in <-chan OrderInfo)  {
 }
 
 func TestOrder(t *testing.T)  {
+	fmt.Println("start TestOrder")
 	n := 100
 	ch := make(chan OrderInfo)
 	defer close(ch)
